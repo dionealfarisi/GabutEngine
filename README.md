@@ -15,3 +15,18 @@ pip install mariadb
 ```
 and make the database. in database have 4 content , title , url , description, content
 
+###Query for database
+```bash
+CREATE DATABASE Gabut;
+
+USE Gabut;
+
+CREATE TABLE `websites` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `description` text DEFAULT NULL,
+  `content` longtext DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+```
